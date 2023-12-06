@@ -1,5 +1,5 @@
 @echo off
-color 5
+color 6
 chcp 65001
 @echo.
 @echo.
@@ -196,13 +196,14 @@ rmdir /q /s C:\Users\%USERNAME%\AppData\Local\Google\Chrome\"User Data"\"Profile
 rmdir /q /s C:\Users\%USERNAME%\AppData\Local\Google\Chrome\"User Data"\"Profile 2"\GPUCache\
 rmdir /q /s C:\Users\%USERNAME%\AppData\Local\Google\Chrome\"User Data"\"Profile 2"\Storage\ext\
 
-exit
-
 
 @echo.
 @echo			-------------------------------------------------
 @echo				Arquivos deletados com sucesso!
 @echo			-------------------------------------------------
 @echo.
+
+sfc /scannow
+
 pause
 exit
